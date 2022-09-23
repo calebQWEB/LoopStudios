@@ -1,0 +1,40 @@
+.loop__heading-container {
+    border: 1px solid var(--White);
+    width: 400px;
+    margin-bottom: 2rem;
+}
+
+.loop__heading-container h1 {
+    padding: 2rem;
+    font-size: 40px;
+    font-weight: 500;
+    font-family: var(--josefin);
+    color: var(--White);
+}
+
+
+@media screen and (max-width: 750px) {
+    .loop__heading-container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 550px) {
+    .loop__heading {
+        padding: 3rem 2rem;
+    }
+
+    .loop__heading-container h1 {
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 300px) {
+    .loop__heading {
+        padding: 3rem 1.5rem;
+    }
+
+    .loop__heading-container h1 {
+        font-size: 25px;
+    }
+}

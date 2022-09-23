@@ -1,0 +1,140 @@
+footer {
+    background-color: var(--Black);
+    padding: 3rem 4rem;
+}
+
+.loop__mobile-view {
+    display: none;
+}
+
+.loop__footer-main {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.loop__footer-media {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.loop__footer-links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.loop__footer-links ul {
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    gap: 1.5rem;
+}
+
+.loop__footer-links ul li a {
+    font-size: 15px;
+    font-weight: 400;
+    font-family: var(--josefin);
+
+    color: var(--White);
+    text-decoration: none;
+}
+
+.loop__footer-links ul li a::after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background-color: var(--White);
+    display: none;
+}
+
+
+.loop__copyright {
+    color: var(--White);
+
+    font-size: 17px;
+    font-weight: 300;
+    font-family: var(--josefin);
+    margin-left: 8rem;
+}
+
+
+@media screen and (max-width: 905px) {
+    .loop__mobile-view {
+        display: grid;
+        grid-template-columns: repeat(1, 100%);
+
+        grid-gap: 2rem;
+    }
+
+    .loop__desktop-view {
+        display: none;
+    }
+
+    .loop__mobile-main {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .loop__mobile-media {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .loop__mobile-links ul {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 1rem;
+    }
+
+    .loop__mobile-links ul li a {
+        font-size: 20px;
+        font-weight: 400;
+        font-family: var(--josefin);
+    
+        color: var(--White);
+        text-decoration: none;
+    }
+
+    .loop__mobile-copyright {
+        color: var(--White);
+        font-size: 17px;
+        font-weight: 300;
+        font-family: var(--josefin);
+
+        margin: 0 auto;
+    }
+
+    .grid-item:nth-of-type(4) {
+        order: 1;
+    }
+
+    .grid-item:nth-of-type(3) {
+        order: -2;
+    }
+
+    .grid-item:nth-of-type(1) {
+        order: -4;
+    }
+
+}
+
+@media screen and (max-width: 550px) {
+    footer {
+        padding: 3rem 2rem;
+    }
+
+    .loop__mobile-copyright {
+        font-size: 14px;
+    }
+}
+
